@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layouts.app')
 
 @section('content')
 
@@ -37,7 +37,8 @@
                 </div>
             @endif
 
-            <form action="{{route('kinos.add')}}" method="POST">
+
+                <form action="{{route('kinos.add')}}" method="POST">
                 @csrf
 
                 <div class="shadow p-3 mb-5 bg-white rounded">

@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1175d06a-9f06-4b39-bfae-a2a8c691f927" name="Default Changelist" comment="" />
+    <list default="true" id="1175d06a-9f06-4b39-bfae-a2a8c691f927" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/kino/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/kino/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,6 +131,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
     </include_path>
   </component>
   <component name="ProjectId" id="1khBgeHBoH9pOzxq8aDBd8h2dGq" />
@@ -110,11 +141,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mariadb&#10;cassandra" />
+    <property name="DatabaseDriversLRU" value="cassandra&#10;mysql&#10;mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/php_mysql/www/stranka1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PhpstormProjects/untitled2/Checkpoint_1" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\filmy\app" />
+      <recent name="C:\Users\Acer\filmy\app\Models" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -133,44 +171,77 @@
       <workItem from="1606143056961" duration="13781000" />
       <workItem from="1606168216446" duration="2295000" />
       <workItem from="1606171951636" duration="1861000" />
-      <workItem from="1606174021232" duration="4261000" />
+      <workItem from="1606174021232" duration="6848000" />
+      <workItem from="1606201129783" duration="5607000" />
+      <workItem from="1607411278624" duration="491000" />
+      <workItem from="1607887159415" duration="1860000" />
+      <workItem from="1609773691036" duration="2586000" />
+      <workItem from="1610053622942" duration="437000" />
+      <workItem from="1610460508220" duration="16544000" />
+      <workItem from="1610553564795" duration="11819000" />
+      <workItem from="1610580389121" duration="4699000" />
+      <workItem from="1610619180812" duration="826000" />
+      <workItem from="1610641439160" duration="5296000" />
+      <workItem from="1610710862807" duration="7167000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606147016872">
+    <state x="395" y="91" key="#Inspections" timestamp="1610471341986">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="395" y="91" key="#Inspections/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610471341986" />
+    <state x="582" y="142" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610466645151">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1606180669903" />
+    <state x="582" y="142" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610466645151" />
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606147016872" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1606176611521">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610580907212">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1606176611521" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610580907212" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610566286745" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610718954266">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610718954266" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606168804671" />
-    <state x="647" y="310" key="Github.ShareDialog" timestamp="1606174056372">
+    <state x="647" y="310" key="Github.ShareDialog" timestamp="1606178415752">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="647" y="310" key="Github.ShareDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1606174056372" />
-    <state x="538" y="117" key="Github.UntrackedFilesDialog" timestamp="1606174065117">
+    <state x="647" y="310" key="Github.ShareDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1606178415752" />
+    <state x="517" y="123" width="354" height="603" key="Github.UntrackedFilesDialog" timestamp="1606178508022">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="538" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1606174065117" />
+    <state x="517" y="123" width="354" height="603" key="Github.UntrackedFilesDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1606178508022" />
+    <state x="579" y="135" key="NewPhpClassDialog" timestamp="1610474736811">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="579" y="135" key="NewPhpClassDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610474736811" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1606144261968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606144261968" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Kino.php</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610718733103">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610718733103" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610569944130" />
   </component>
 </project>

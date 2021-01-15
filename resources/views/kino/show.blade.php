@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layouts.app')
 
 @section('content')
 
@@ -45,11 +45,11 @@
                             <p class="card-text">{!!nl2br($kino->popis)!!}</p>
                             <img class="card-img-top" src="{{$kino->plagat}} "/>
 
-{{--                            @if (!empty($kino->plagat))--}}
-{{--                                <img src="{{$kino->plagat}}" alt="">--}}
-{{--                            @else--}}
-{{--                                nema plagat--}}
-{{--                            @endif--}}
+                            {{--                            @if (!empty($kino->plagat))--}}
+                            {{--                                <img src="{{$kino->plagat}}" alt="">--}}
+                            {{--                            @else--}}
+                            {{--                                nema plagat--}}
+                            {{--                            @endif--}}
 
                             <hr>
                             <form action="{{route('kinos.edit', $kino)}}" method="POST">

@@ -11,7 +11,9 @@
 |
 */
 
+//use App\Http\Controllers\UserController;
 use App\Kino;
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
     $kinos = Kino::all();
@@ -27,3 +29,14 @@ Route::delete('/kinos/{kino}', 'KinoController@delete')->name('kinos.delete');
 
 Route::get('/kinos/zmaz/{kino}', 'KinoController@edit')->name('kinos.zmaz');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware'=>['auth']], function (){//az ked sa uzivatel prihlasy, moze vidiet userov
+Route::resource('user', UserController::class);
+Route::get('/user/{user}/delete', [UserController::class, 'destroy'])->name('user.delete'); //trochu nevyhoda riesenia cez
+    //resource, ze to neprida vsetky route, delete ocakava ze sa to bude mazat cez formular, ale my to chceme vymazat tak ze rovno budeme mat tlacitko v gride
+    //preo tam treba tuto route
+});
