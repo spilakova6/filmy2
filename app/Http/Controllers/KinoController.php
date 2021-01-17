@@ -8,6 +8,8 @@ use function Ramsey\Uuid\v1;
 
 class KinoController extends Controller
 {
+
+
     public function index(){
         $kinos = Kino::all();
         return view('kino.index')->with(['kinos'=>$kinos]);
@@ -18,14 +20,16 @@ class KinoController extends Controller
         $validatedData = $request->validate([
             'nazov' => 'required|min:3|max:255',
             'plagat' => 'required|url',
-            'popis' => 'required'
+            'popis' => 'required',
+
         ],
         [
             'nazov.required' => "Nazov nemoze byt prazdny",
             'nazov.min' => 'Nazov musi obsahovat min. 3 znaky',
             'plagat.required' => 'URL obrazok musi obsahovat URL obrazka',
             'plagat.url' => 'URL obrazok musi obsahovat format URL',
-            'popis.required' => 'popis nesmie byt prazdny'
+            'popis.required' => 'popis nesmie byt prazdny',
+
 
         ]);
 
@@ -33,9 +37,13 @@ class KinoController extends Controller
         $kino->nazov = $request->get('nazov');
         $kino->popis = $request->get('popis');
         $kino->plagat = $request->get('plagat');
+        $kino->cas = $request->get('cas');
+        $kino->datum = $request->get('datum');
+
         $kino->save();
 
         return redirect()->route('kinos.index', $kino);
+
     }
 
     public function show(Request $request, Kino $kino){

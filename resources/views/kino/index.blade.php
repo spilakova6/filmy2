@@ -2,68 +2,83 @@
 
 @section('content')
 
-    <!doctype html>
-<html lang="en">
+{{--<!doctype html>--}}
+{{--<html lang="en">--}}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="check.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="check.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+                crossorigin="anonymous"></script>
 </head>
 
 
 {{--    <a href="{{route('kinos.index')}}">home</a> <br>--}}
-<body>
-<div class="container">
-    <div class="row">
-        <div class="col">
+{{--<body>--}}
+{{--@auth--}}
+{{--<div class="container">--}}
+{{--    <div class="row">--}}
+{{--        <div class="col">--}}
 
-            @if ($errors->any())
-                <div class="alert alert-danger">
-                    <ul>
-                        @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
+{{--            @if ($errors->any())--}}
+{{--                <div class="alert alert-danger">--}}
+{{--                    <ul>--}}
+{{--                        @foreach ($errors->all() as $error)--}}
+{{--                            <li>{{ $error }}</li>--}}
+{{--                        @endforeach--}}
+{{--                    </ul>--}}
+{{--                </div>--}}
+{{--            @endif--}}
 
 
-                <form action="{{route('kinos.add')}}" method="POST">
-                @csrf
+{{--            <form action="{{route('kinos.add')}}" method="POST">--}}
+{{--                @csrf--}}
 
-                <div class="shadow p-3 mb-5 bg-white rounded">
-                    <div class="form-group">
-                        <label>Nazov filmu</label>
-                        <input class="form-control" type="text" name="nazov" value="{{old('nazov')}}"/>
-                    </div>
-                    <div class="form-group">
-                        <label>Popis</label>
-                        <input class="form-control" type="text" name="popis" value="{{old('popis')}}"/>
-                    </div>
-                    <div class="form-group">
-                        <label>URL obrazka</label>
-                        <input class="form-control" type="text" name="plagat" value="{{old('plagat')}}"/>
-                    </div>
+{{--                <div class="shadow p-3 mb-5 bg-white rounded">--}}
+{{--                    <div class="form-group">--}}
+{{--                        <label>Nazov filmu</label>--}}
+{{--                        <input class="form-control" type="text" name="nazov" value="{{old('nazov')}}"/>--}}
+{{--                    </div>--}}
+{{--                    <div class="form-group">--}}
+{{--                        <label>Popis</label>--}}
+{{--                        <input class="form-control" type="text" name="popis" value="{{old('popis')}}"/>--}}
+{{--                    </div>--}}
+{{--                    <div class="form-group">--}}
+{{--                        <label>URL obrazka</label>--}}
+{{--                        <input class="form-control" type="text" name="plagat" value="{{old('plagat')}}"/>--}}
+{{--                    </div>--}}
 
-                    <button type="submit" class="btn btn-primary">Pridat</button>
 
-                </div>
-            </form>
+{{--                    <div class="form-group" >--}}
+{{--                        <div class="input-group " >--}}
+{{--                            <input  type="text"  class="form-control" id="datetimepicker"   name="cas"--}}
+{{--                                   value="{{old('cas')}}"/>--}}
+{{--                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-calendar"--}}
+{{--                                                                                aria-hidden="true"></i></span>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
-        </div>
-    </div>
-</div>
 
+
+
+{{--                    <button type="submit" class="btn btn-primary">Pridat</button>--}}
+
+{{--                </div>--}}
+{{--            </form>--}}
+
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
+{{--@endauth--}}
 
 <div class="container pb-4">
 
@@ -77,27 +92,32 @@
                     <div class="col-md-4 d-flex align-items-stretch ">
                         <div class="card">
                             <div class="card-body ">
+                                @auth
                                 <a class="btn btn-outline-primary" href="{{route('kinos.show', $kino)}}"
                                    role="button">edituj</a>
-                                <br>
 
+                                <br>
+                                @endauth
                                 <form action=""></form>
 
 
                                 <form action="{{route('kinos.delete', $kino)}}" method="POST">
                                     @csrf
                                     <input type="hidden" name="_method" value="DELETE"/>
-
+                                    @auth
                                     <button type="submit" class="btn btn-outline-danger "
                                             onclick="return confirm('Naozaj zmazat?');">Zmazat
                                     </button>
-
+                                    @endauth
                                 </form>
 
 
-                                <h5 class="card-title">{!!nl2br($kino->nazov)!!}</h5>
+                                <h5 class="card-title"><B>{!!nl2br($kino->nazov)!!}</B></h5>
                                 <p class="card-text">{!!nl2br($kino->popis)!!}</p>
                                 <img class="card-img-top" src="{{$kino->plagat}} "/>
+                                    <a href="#" class="btn btn-primary align-text-top">{{$kino->datum}}   {{$kino->cas}}</a>
+
+
                             </div>
                         </div>
                     </div>
@@ -109,13 +129,14 @@
     <hr>
 </div>
 
-</body>
-</html>
+
+{{--</body>--}}
+{{--</html>--}}
+
+
 
 
 @endsection
-
-
 
 
 
