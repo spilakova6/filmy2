@@ -30,6 +30,6 @@ class HomeController extends Controller
     public function index()
     {
         $kinos = Kino::all();
-        return view('kino.index')->with(['kinos'=>$kinos]);
+        return view('kino.program')->with(['kinos'=>$kinos]);
     }
 }

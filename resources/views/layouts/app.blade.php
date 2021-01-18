@@ -51,19 +51,17 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        <a class="nav-link" href="{{route('program')}}">{{__('Program')}}</a>
                         @auth
                             <a class="nav-link" href="{{route('user.index')}}">{{__('Users')}}</a>
 
+                                <a class="nav-link" href="{{route('add')}}">{{__('Pridaj program')}}</a>
+
+
                         @endauth
                     </ul>
 
 
-                    <ul class="navbar-nav mr-auto">
-                        @auth
-                            <a class="nav-link" href="{{route('add')}}">{{__('add')}}</a>
-
-                        @endauth
-                    </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">

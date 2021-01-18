@@ -12,7 +12,7 @@ class KinoController extends Controller
 
     public function index(){
         $kinos = Kino::all();
-        return view('kino.index')->with(['kinos'=>$kinos]);
+        return view('kino.program')->with(['kinos'=>$kinos]);
     }
 
     public function add(Request $request){
@@ -42,7 +42,7 @@ class KinoController extends Controller
 
         $kino->save();
 
-        return redirect()->route('kinos.index', $kino);
+        return redirect()->route('kino.program', $kino);
 
     }
 

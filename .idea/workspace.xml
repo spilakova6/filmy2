@@ -19,18 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1175d06a-9f06-4b39-bfae-a2a8c691f927" name="Default Changelist" comment="pridane login, register, users">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_17_01_200000_create_pictures_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/kino/add.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/kino/program.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
+    <list default="true" id="1175d06a-9f06-4b39-bfae-a2a8c691f927" name="Default Changelist" comment="datepicker">
+      <change afterPath="$PROJECT_DIR$/app/Picture.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/KinoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/KinoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/kino/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/kino/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/kino/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/kino/program.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/program.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -152,6 +149,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\filmy\resources\views\kino" />
+      <recent name="C:\Users\Acer\filmy\resources\views\picture" />
       <recent name="C:\Users\Acer\filmy\app" />
       <recent name="C:\Users\Acer\filmy\app\Models" />
     </key>
@@ -186,7 +185,7 @@
       <workItem from="1610641439160" duration="5296000" />
       <workItem from="1610710862807" duration="14301000" />
       <workItem from="1610728677065" duration="8806000" />
-      <workItem from="1610740628804" duration="33088000" />
+      <workItem from="1610740628804" duration="64691000" />
     </task>
     <task id="LOCAL-00001" summary="pridane login, register, users">
       <created>1610720220076</created>
@@ -209,7 +208,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610720448501</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="úpravy stránky">
+      <created>1610883231750</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610883231750</updated>
+    </task>
+    <task id="LOCAL-00005" summary="datepicker">
+      <created>1610883287950</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610883287950</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +242,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pridane login, register, users" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridane login, register, users" />
+    <MESSAGE value="úpravy stránky" />
+    <MESSAGE value="datepicker" />
+    <option name="LAST_COMMIT_MESSAGE" value="datepicker" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1610471341986">
@@ -242,10 +257,10 @@
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1606180669903" />
     <state x="582" y="142" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610466645151" />
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606147016872" />
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610580907212">
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610884208977">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610580907212" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610884208977" />
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610566286745" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610881682979">
       <screen x="0" y="0" width="1536" height="824" />
@@ -260,30 +275,35 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="517" y="123" width="354" height="603" key="Github.UntrackedFilesDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1606178508022" />
-    <state x="579" y="135" key="NewPhpClassDialog" timestamp="1610474736811">
+    <state x="579" y="135" key="NewPhpClassDialog" timestamp="1610884088848">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="579" y="135" key="NewPhpClassDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610884088848" />
     <state x="579" y="135" key="NewPhpClassDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610474736811" />
     <state x="604" y="336" key="NewPhpFileDialog" timestamp="1610882664397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610882664397" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610720463191">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610883290203">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610720463191" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610883290203" />
     <state x="1920" y="0" width="1217" height="811" maximized="true" key="dock-window-1" timestamp="1610807397349">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
     <state x="1920" y="0" width="1217" height="811" maximized="true" key="dock-window-1/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610807397349" />
+    <state x="1913" y="128" width="1201" height="811" maximized="true" key="dock-window-2" timestamp="1610887183371">
+      <screen x="1920" y="0" width="1280" height="984" />
+    </state>
+    <state x="1913" y="128" width="1201" height="811" maximized="true" key="dock-window-2/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610887183371" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1606144261968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606144261968" />
-    <state x="459" y="367" width="672" height="678" key="search.everywhere.popup" timestamp="1610743680712">
+    <state x="459" y="367" width="672" height="678" key="search.everywhere.popup" timestamp="1610887164958">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="459" y="367" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610743680712" />
+    <state x="459" y="367" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610887164958" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610569944130" />
   </component>
 </project>

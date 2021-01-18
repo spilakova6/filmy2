@@ -22,15 +22,15 @@ Route::get('/', function () {
 });
 
 Route::get('add', function () {
-//    $kinos = Kino::all();
-//    dd($kinos);
     return view('kino/add');
-
 })->name('add');
+
+
+
 
 //definuje cesty
 
-Route::get('/kinos', 'KinoController@index')->name('kinos.index');
+Route::get('/program', 'KinoController@index')->name('program');
 Route::get('/kinos/{kino}', 'KinoController@show')->name('kinos.show');
 Route::post('kinos/add', 'KinoController@add')->name('kinos.add');
 Route::put('/kinos/{kino}', 'KinoController@edit')->name('kinos.edit');
@@ -49,3 +49,6 @@ Route::get('/user/{user}/delete', [UserController::class, 'destroy'])->name('use
     //resource, ze to neprida vsetky route, delete ocakava ze sa to bude mazat cez formular, ale my to chceme vymazat tak ze rovno budeme mat tlacitko v gride
     //preo tam treba tuto route
 });
+
+Route::get('/kino', 'PictureController@index')->name('kinos.index');
+

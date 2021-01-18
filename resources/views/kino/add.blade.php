@@ -56,7 +56,7 @@
 
                                         format: 'yyyy-mm-dd',
                                         startDate:  $().datepicker ('getDate', true),
-á
+
                                     });
 
                                 });

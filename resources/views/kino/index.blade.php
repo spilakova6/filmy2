@@ -2,146 +2,170 @@
 
 @section('content')
 
-{{--<!doctype html>--}}
-{{--<html lang="en">--}}
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <link rel="stylesheet" href="check.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-                crossorigin="anonymous"></script>
-</head>
+    <style>
+
+        #footer-area{
+            padding: 90px 0 60px 0;
+            background: #262626;
+            color: #fff;
+        }
+        .footer-social {
+            margin-top:  20px;
 
 
-{{--    <a href="{{route('kinos.index')}}">home</a> <br>--}}
-{{--<body>--}}
-{{--@auth--}}
-{{--<div class="container">--}}
-{{--    <div class="row">--}}
-{{--        <div class="col">--}}
+        }
+        .single-footer h3{
+            font-weight: 500;
+            margin-bottom: 25px;
+            color: #fafafa;
+            font-family: Merienda;
+        }
+        .link-area li {
+            padding: 5px 5px 5px 0;
+            list-style: none;
+        }
+        .link-area li a {
+            text-transform: capitalize;
+            color: #ddd;
+            font-family: Merienda;
+        }
 
-{{--            @if ($errors->any())--}}
-{{--                <div class="alert alert-danger">--}}
-{{--                    <ul>--}}
-{{--                        @foreach ($errors->all() as $error)--}}
-{{--                            <li>{{ $error }}</li>--}}
-{{--                        @endforeach--}}
-{{--                    </ul>--}}
-{{--                </div>--}}
-{{--            @endif--}}
+        .link-area li a i{
+            margin-right: 10px;
+            color: #ddd;
+
+        }
+        .link-area {
+            padding: 0;
+        }
+        .single-footer p{
+            font-family: Merienda;
+        }
+
+        .footer-social a {
+            width: 30px;
+            height: 30px;
+           margin-left: 20px;
+        }
+        .footer-social li a i{
+            color: #fff;
+            padding: 8px;
+        }
+        .widget li {
+            float: left;
+            width: 50%;
+
+        }
+        .widget li a img{
+            margin-bottom: -10px;
+            width: 150%;
+            height: 200px;
+        }
+        .copyright-area {
+            background: #000;
+            padding: 30px 0;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+        .copyright-area p{
+            font-weight: 600;
+            color: #fafafa;
+        }
+    </style>
 
 
-{{--            <form action="{{route('kinos.add')}}" method="POST">--}}
-{{--                @csrf--}}
 
-{{--                <div class="shadow p-3 mb-5 bg-white rounded">--}}
-{{--                    <div class="form-group">--}}
-{{--                        <label>Nazov filmu</label>--}}
-{{--                        <input class="form-control" type="text" name="nazov" value="{{old('nazov')}}"/>--}}
-{{--                    </div>--}}
-{{--                    <div class="form-group">--}}
-{{--                        <label>Popis</label>--}}
-{{--                        <input class="form-control" type="text" name="popis" value="{{old('popis')}}"/>--}}
-{{--                    </div>--}}
-{{--                    <div class="form-group">--}}
-{{--                        <label>URL obrazka</label>--}}
-{{--                        <input class="form-control" type="text" name="plagat" value="{{old('plagat')}}"/>--}}
-{{--                    </div>--}}
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
 
-
-{{--                    <div class="form-group" >--}}
-{{--                        <div class="input-group " >--}}
-{{--                            <input  type="text"  class="form-control" id="datetimepicker"   name="cas"--}}
-{{--                                   value="{{old('cas')}}"/>--}}
-{{--                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-calendar"--}}
-{{--                                                                                aria-hidden="true"></i></span>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
+            @foreach($pictures->take(4) as $picture)
+                <div class="text-center carousel-item @if($loop->first) active @endif">
+                    <img class="d-block mx-auto img-fluid" src="{{$picture->picture}}" alt="First slide">
+                </div>
+            @endforeach
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
 
-
-
-{{--                    <button type="submit" class="btn btn-primary">Pridat</button>--}}
-
-{{--                </div>--}}
-{{--            </form>--}}
-
-{{--        </div>--}}
-{{--    </div>--}}
-{{--</div>--}}
-{{--@endauth--}}
-
-<div class="container pb-4">
-
-    <div class="row">
-        <div class="col-md-12">
-
+<footer >
+    <p></p>
+    <div id="footer-area">
+        <div class="container">
             <div class="row">
-
-
-                @foreach($kinos as $kino)
-                    <div class="col-md-4 d-flex align-items-stretch ">
-                        <div class="card">
-                            <div class="card-body ">
-                                @auth
-                                <a class="btn btn-outline-primary" href="{{route('kinos.show', $kino)}}"
-                                   role="button">edituj</a>
-
-                                <br>
-                                @endauth
-                                <form action=""></form>
-
-
-                                <form action="{{route('kinos.delete', $kino)}}" method="POST">
-                                    @csrf
-                                    <input type="hidden" name="_method" value="DELETE"/>
-                                    @auth
-                                    <button type="submit" class="btn btn-outline-danger "
-                                            onclick="return confirm('Naozaj zmazat?');">Zmazat
-                                    </button>
-                                    @endauth
-                                </form>
-
-
-                                <h5 class="card-title"><B>{!!nl2br($kino->nazov)!!}</B></h5>
-                                <p class="card-text">{!!nl2br($kino->popis)!!}</p>
-                                <img class="card-img-top" src="{{$kino->plagat}} "/>
-                                    <a href="#" class="btn btn-primary align-text-top">{{$kino->datum}}   {{$kino->cas}}</a>
-
-
-                            </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-footer">
+                        <h3>O nás</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac massa et enim rutrum gravida vel et ligula. Morbi sed est sit amet lacus tristique hendrerit vitae et mi. Vivamus ornar.</p>
+                        <div class="footer-social list-inline ">
+                            <a href=""><i class="fa fa-facebook-f"></i></a>
+                           <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-pinterest"></i></a>
+                            <a href=""><i class="fa fa-linkedin"></i></a>
+                            <a href=""><i class="fa fa-youtube"></i></a>
                         </div>
                     </div>
-                @endforeach
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-footer">
+                        <h3>Cinema</h3>
+                        <ul class="link-area">
+                            <li><a href="#"><i class="fa fa-long-arrow-right"></i>Product FAQs</a></li>
+                            <li><a href="#"><i class="fa fa-long-arrow-right"></i>Otváracie hodiny</a></li>
+                            <li><a href="#"><i class="fa fa-long-arrow-right"></i>Kariéra</a></li>
+                            <li><a href="#"><i class="fa fa-long-arrow-right"></i>Mapa</a></li>
+                            <li><a href="#"><i class="fa fa-long-arrow-right"></i>Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-footer">
+                        <h3>Kontakt</h3>
+                        <ul class="link-area">
+                            <li><a href="#"><i class="fa fa-phone"></i>+421949785025</a></li>
+                            <li><a href="#"><i class="fa fa-envelope-o"></i>cinemas@cinemas.com</a></li>
+                            <li><a href="#"><i class="fa fa-map"></i>821 05, Bajkalská, Bratislava</a></li>
+                            <li><a href="#"><i class="fa fa-globe"></i>www.webcinema.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="single-footer">
+                        <ul class="link-area widget list-inline">
+                            <li>
+                                <a href="#"><img src="{{asset('logo/logo.png')}}" alt=""></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright-area text-center">
+                        <p>&copy; 2021, All Right Reserved</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <hr>
-</div>
 
 
-{{--</body>--}}
-{{--</html>--}}
-
+</footer>
 
 
 
 @endsection
-
-
-
-
-
-
-
-
