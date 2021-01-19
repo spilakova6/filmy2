@@ -19,16 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1175d06a-9f06-4b39-bfae-a2a8c691f927" name="Default Changelist" comment="datepicker">
-      <change afterPath="$PROJECT_DIR$/app/Picture.php" afterDir="false" />
+    <list default="true" id="1175d06a-9f06-4b39-bfae-a2a8c691f927" name="Default Changelist" comment="pridana tabulka pictures, pridana nova uvodna stranka, footer + nejake dalsie úpravy">
+      <change afterPath="$PROJECT_DIR$/app/Article.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/kino/article.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/KinoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/KinoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/kino/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/kino/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/kino/program.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/program.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Kino.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Kino.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +142,7 @@
     <property name="DatabaseDriversLRU" value="cassandra&#10;mysql&#10;mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PhpstormProjects/untitled2/Checkpoint_1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -185,7 +184,8 @@
       <workItem from="1610641439160" duration="5296000" />
       <workItem from="1610710862807" duration="14301000" />
       <workItem from="1610728677065" duration="8806000" />
-      <workItem from="1610740628804" duration="64691000" />
+      <workItem from="1610740628804" duration="77577000" />
+      <workItem from="1610994986417" duration="24082000" />
     </task>
     <task id="LOCAL-00001" summary="pridane login, register, users">
       <created>1610720220076</created>
@@ -222,7 +222,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610883287950</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="pridana tabulka pictures, pridana nova uvodna stranka, footer + nejake dalsie úpravy">
+      <created>1610977555132</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610977555132</updated>
+    </task>
+    <task id="LOCAL-00007" summary="pridana tabulka pictures, pridana nova uvodna stranka, footer + nejake dalsie úpravy">
+      <created>1610977571835</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610977571835</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +258,8 @@
     <MESSAGE value="pridane login, register, users" />
     <MESSAGE value="úpravy stránky" />
     <MESSAGE value="datepicker" />
-    <option name="LAST_COMMIT_MESSAGE" value="datepicker" />
+    <MESSAGE value="pridana tabulka pictures, pridana nova uvodna stranka, footer + nejake dalsie úpravy" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridana tabulka pictures, pridana nova uvodna stranka, footer + nejake dalsie úpravy" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1610471341986">
@@ -257,10 +272,14 @@
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1606180669903" />
     <state x="582" y="142" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610466645151" />
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606147016872" />
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610884208977">
+    <state x="162" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610986674290">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610884208977" />
+    <state x="162" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610986674290" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611011397389">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1611011397389" />
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610566286745" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610881682979">
       <screen x="0" y="0" width="1536" height="824" />
@@ -275,19 +294,19 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="517" y="123" width="354" height="603" key="Github.UntrackedFilesDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1606178508022" />
-    <state x="579" y="135" key="NewPhpClassDialog" timestamp="1610884088848">
+    <state x="579" y="135" key="NewPhpClassDialog" timestamp="1610984831541">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="579" y="135" key="NewPhpClassDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610884088848" />
+    <state x="579" y="135" key="NewPhpClassDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610984831541" />
     <state x="579" y="135" key="NewPhpClassDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610474736811" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1610882664397">
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1610984803858">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610882664397" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610883290203">
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610984803858" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610977604341">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610883290203" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610977604341" />
     <state x="1920" y="0" width="1217" height="811" maximized="true" key="dock-window-1" timestamp="1610807397349">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
@@ -296,6 +315,22 @@
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
     <state x="1913" y="128" width="1201" height="811" maximized="true" key="dock-window-2/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610887183371" />
+    <state x="1920" y="0" width="948" height="811" key="dock-window-3" timestamp="1610980775244">
+      <screen x="1920" y="0" width="1280" height="984" />
+    </state>
+    <state x="1920" y="0" width="948" height="811" key="dock-window-3/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610980775244" />
+    <state x="1920" y="0" width="1120" height="811" maximized="true" key="dock-window-4" timestamp="1610986133202">
+      <screen x="1920" y="0" width="1280" height="984" />
+    </state>
+    <state x="1920" y="0" width="1120" height="811" maximized="true" key="dock-window-4/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610986133202" />
+    <state x="1920" y="0" width="1120" height="811" maximized="true" key="dock-window-5" timestamp="1610986133203">
+      <screen x="1920" y="0" width="1280" height="984" />
+    </state>
+    <state x="1920" y="0" width="1120" height="811" maximized="true" key="dock-window-5/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610986133203" />
+    <state x="1660" y="93" width="1400" height="882" maximized="true" key="dock-window-6" timestamp="1610999384115">
+      <screen x="1920" y="0" width="1280" height="984" />
+    </state>
+    <state x="1660" y="93" width="1400" height="882" maximized="true" key="dock-window-6/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610999384115" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1606144261968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

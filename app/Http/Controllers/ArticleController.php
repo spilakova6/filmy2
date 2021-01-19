@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Article;
 use Illuminate\Http\Request;
-use App\User;
-use Illuminate\Support\Facades\DB;
 
-class UserController extends Controller
+class ArticleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,12 +14,9 @@ class UserController extends Controller
      */
     public function index()
     {
-        $user = User::all();
-        return view('user.index',['users'=>$user]);
-
+        $articles = Article::all();
+        return view('kino.article')->with(['articles'=>$articles]);
     }
-
-
 
     /**
      * Show the form for creating a new resource.
@@ -29,20 +25,21 @@ class UserController extends Controller
      */
     public function create(Request $request)
     {
-        $user = new User();
-        $user->id = $request->get('id');
-        $user->name = $request->get('name');
-        $user->email = $request->get('email');
-        $user->email_verified_at = $request->get('email_verified_at');
-        $user->password = $request->get('password');
-        $user->remember_token = $request->get('remember_token');
-        $user->created_at = $request->get('created_at');
-        $user->updated_at = $request->get('updated_at');
-        $user->foto = $request->get('foto');
-        $user->save();
+        $article = new Article();
+        $article->id = $request->get('id');
+        $article->kino_id = $request->get('kino_id');
+        $article->user_id = $request->get('user_id');
+        $article->nazov = $request->get('nazov');
+        $article->obrazok = $request->get('obrazok');
+        $article->popis = $request->get('popis');
+        $article->hodnotenie = $request->get('hodnotenie');
+        $article->pocet_hodnoteni = $request->get('pocet_hodnoteni');
 
-        return redirect()->route('user.index', $user);
+        $article->save();
+
+        return redirect()->route('kino.article', $article);
     }
+
 
     /**
      * Store a newly created resource in storage.

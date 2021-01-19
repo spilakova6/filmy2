@@ -51,4 +51,5 @@ Route::get('/user/{user}/delete', [UserController::class, 'destroy'])->name('use
 });
 
 Route::get('/kino', 'PictureController@index')->name('kinos.index');
+Route::get('/article', 'ArticleController@index')->name('article');
 

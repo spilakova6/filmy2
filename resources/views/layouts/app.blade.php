@@ -52,6 +52,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <a class="nav-link" href="{{route('program')}}">{{__('Program')}}</a>
+                        <a class="nav-link" href="{{route('article')}}">{{__('Články')}}</a>
                         @auth
                             <a class="nav-link" href="{{route('user.index')}}">{{__('Users')}}</a>
 
