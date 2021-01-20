@@ -1,0 +1,12 @@
+.box-shadow {
+    padding: 10px;
+    border: 1px solid #999;
+    box-shadow: 0px 0px 5px #888;
+    border-radius: 5px;
+}
+
+.col-md-12 h3 {
+    text-shadow: 2px 2px 5px #888;
+    font-family: Monaco;
+
+}

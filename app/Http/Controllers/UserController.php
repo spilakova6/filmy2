@@ -9,6 +9,12 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+
+//    public function __construct()
+//    {
+//        $this->authorizeResource(User::class, 'user');
+//    }
+
     /**
      * Display a listing of the resource.
      *
@@ -38,18 +44,18 @@ class UserController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|min:3|max:255',
-            'email' => 'required|email',
-            'password' => 'required|min:5',
-
+            'email' => 'required|email|unique:users,email',
+            'password' => 'required|min:8|confirmed',
         ],
             [
                 'name.required' => "Meno nemoze byt prazdne",
                 'name.min' => 'Meno musi obsahovat min. 3 znaky',
                 'email.required' => 'Email nemoze byt prazdny',
                 'email.email' => 'email musi byt vo formate email@email.com',
+                'email.unique' => 'Pre zadany email už je vytvorené konto',
                 'password.required' => 'heslo nemoze byt prazdne',
                 'password.min' => 'heslo musi obsahovat min. 5 znakov ',
-
+                'password.confirmed' => 'heslo sa nezhoduje',
             ]);
 
 
@@ -126,9 +132,7 @@ class UserController extends Controller
      */
     public function destroy(Request $request, User $user)
     {
-        if($request->ajax()){
-            return $user;
-        }
+
         $user->delete();
 
 //        return redirect()->back();

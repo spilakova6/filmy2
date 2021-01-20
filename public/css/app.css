@@ -108,7 +108,12 @@
 }
 
 
-
+body  {
+    background-repeat: no-repeat;
+    background-image: url("https://yourdubaiguide.com/wp-content/uploads/2019/03/Novo-Cinemas-IMG-Worlds-of-Adventure-dubai.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 
 

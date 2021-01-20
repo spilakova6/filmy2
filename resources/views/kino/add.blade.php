@@ -7,7 +7,18 @@
     <script src="{{asset('datepicker/datepicker.js')}}"></script>
 <link rel="stylesheet" href="{{asset('datetimepicker/jquery.datetimepicker.css')}}"/>
 <script src="{{asset('datetimepicker/jquery.datetimepicker.full.js')}}"></script>
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">;
 
+{{--    <style>--}}
+{{--        body {--}}
+{{--            background-repeat: no-repeat;--}}
+{{--            background-image: url("https://yourdubaiguide.com/wp-content/uploads/2019/03/Novo-Cinemas-IMG-Worlds-of-Adventure-dubai.jpg");--}}
+{{--            background-attachment: fixed;--}}
+{{--            background-size: cover;--}}
+{{--        }--}}
+
+
+{{--    </style>--}}
 
     @auth
         <div class="container">
@@ -24,23 +35,22 @@
                     @endif
                     <form action="{{route('kinos.add')}}" method="POST">
                         @csrf
-
                         <div class="shadow p-3 mb-5 bg-white rounded">
                             <div class="form-group">
                                 <label>Nazov filmu</label>
-                                <input class="form-control" type="text" name="nazov" value="{{old('nazov')}}"/>
+                                <input class="form-control" type="text" name="nazov" required  value="{{old('nazov')}}"/>
                             </div>
                             <div class="form-group">
                                 <label>Popis</label>
-                                <input class="form-control" type="text" name="popis" value="{{old('popis')}}"/>
+                                <input class="form-control" type="text" name="popis" required value="{{old('popis')}}"/>
                             </div>
                             <div class="form-group">
                                 <label>URL obrazka</label>
-                                <input class="form-control" type="text" name="plagat" value="{{old('plagat')}}"/>
+                                <input class="form-control" type="text" name="plagat" required value="{{old('plagat')}}"/>
                             </div>
                             <div class="form-group">
                                 <label>Cas</label>
-                                <input class="form-control" id="timepicker" type="text" name="cas" value="{{old('cas')}}"/>
+                                <input class="form-control" id="timepicker" type="text" autocomplete="off"  required name="cas" value="{{old('cas')}}"/>
                             </div>
                             <script>
                                 $('#timepicker').datetimepicker({
@@ -53,7 +63,7 @@
                             </script>
                             <div class="form-group">
                                 <label>Datum</label>
-                            <input data-toggle="datepicker"  class="form-control" type="text" name="datum" value="{{old('datum')}}"/>
+                            <input data-toggle="datepicker"  class="form-control" type="text" autocomplete="off" required name="datum" value="{{old('datum')}}"/>
                             </div>
                             <script>
                                 $(function () {
@@ -67,7 +77,6 @@
                             <button type="submit" class="btn btn-primary">Pridat</button>
                         </div>
                     </form>
-
                 </div>
             </div>
         </div>

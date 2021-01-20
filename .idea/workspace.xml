@@ -19,18 +19,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1175d06a-9f06-4b39-bfae-a2a8c691f927" name="Default Changelist" comment="pridana tabulka pictures, pridana nova uvodna stranka, footer + nejake dalsie úpravy&#10;&#10;pridana tabulka articles, uprava databazy, pridaný cudzí klúč, pridana stranka clanky">
+    <list default="true" id="1175d06a-9f06-4b39-bfae-a2a8c691f927" name="Default Changelist" comment="datetimepicker, Ajax, pre users- pridane funkcie create, delete + uprava blade pre users">
+      <change afterPath="$PROJECT_DIR$/public/css/art.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/KinoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/KinoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/kino/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/kino/article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/article.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/kino/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/kino/program.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/program.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/kino/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +46,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -146,6 +158,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="textmate" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -188,7 +201,7 @@
       <workItem from="1610710862807" duration="14301000" />
       <workItem from="1610728677065" duration="8806000" />
       <workItem from="1610740628804" duration="77577000" />
-      <workItem from="1610994986417" duration="64648000" />
+      <workItem from="1610994986417" duration="86558000" />
     </task>
     <task id="LOCAL-00001" summary="pridane login, register, users">
       <created>1610720220076</created>
@@ -246,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611068559282</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="datetimepicker, Ajax, pre users- pridane funkcie create, delete + uprava blade pre users">
+      <created>1611111614388</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611111614388</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +290,8 @@
     <MESSAGE value="datepicker" />
     <MESSAGE value="pridana tabulka pictures, pridana nova uvodna stranka, footer + nejake dalsie úpravy" />
     <MESSAGE value="pridana tabulka pictures, pridana nova uvodna stranka, footer + nejake dalsie úpravy&#10;&#10;pridana tabulka articles, uprava databazy, pridaný cudzí klúč, pridana stranka clanky" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridana tabulka pictures, pridana nova uvodna stranka, footer + nejake dalsie úpravy&#10;&#10;pridana tabulka articles, uprava databazy, pridaný cudzí klúč, pridana stranka clanky" />
+    <MESSAGE value="datetimepicker, Ajax, pre users- pridane funkcie create, delete + uprava blade pre users" />
+    <option name="LAST_COMMIT_MESSAGE" value="datetimepicker, Ajax, pre users- pridane funkcie create, delete + uprava blade pre users" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1610471341986">
@@ -283,6 +304,10 @@
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1606180669903" />
     <state x="582" y="142" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610466645151" />
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606147016872" />
+    <state x="536" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611142712356">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="536" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1611142712356" />
     <state x="162" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610986674290">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -315,23 +340,23 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610984803858" />
-    <state x="2221" y="173" key="Vcs.Push.Dialog.v2" timestamp="1611068565885">
-      <screen x="1920" y="0" width="1280" height="984" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1611111620013">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610977604341" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1611111620013" />
     <state x="2221" y="173" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1611068565885" />
-    <state x="1920" y="0" width="1217" height="811" maximized="true" key="dock-window-1" timestamp="1610807397349">
+    <state x="1920" y="0" width="1235" height="811" maximized="true" key="dock-window-1" timestamp="1611143044166">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state x="1920" y="0" width="1217" height="811" maximized="true" key="dock-window-1/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610807397349" />
-    <state x="1913" y="128" width="1201" height="811" maximized="true" key="dock-window-2" timestamp="1610887183371">
+    <state x="1920" y="0" width="1235" height="811" maximized="true" key="dock-window-1/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1611143044166" />
+    <state x="1920" y="0" width="1235" height="811" key="dock-window-2" timestamp="1611143044166">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state x="1913" y="128" width="1201" height="811" maximized="true" key="dock-window-2/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610887183371" />
-    <state x="1920" y="0" width="948" height="811" key="dock-window-3" timestamp="1610980775244">
+    <state x="1920" y="0" width="1235" height="811" key="dock-window-2/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1611143044166" />
+    <state x="1920" y="0" width="1235" height="811" key="dock-window-3" timestamp="1611143044167">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
-    <state x="1920" y="0" width="948" height="811" key="dock-window-3/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610980775244" />
+    <state x="1920" y="0" width="1235" height="811" key="dock-window-3/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1611143044166" />
     <state x="1920" y="0" width="1120" height="811" maximized="true" key="dock-window-4" timestamp="1610986133202">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
@@ -348,10 +373,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606144261968" />
-    <state x="459" y="367" width="672" height="678" key="search.everywhere.popup" timestamp="1610887164958">
+    <state x="459" y="367" width="672" height="678" key="search.everywhere.popup" timestamp="1611147670763">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="459" y="367" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610887164958" />
+    <state x="459" y="367" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1611147670763" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610569944130" />
   </component>
 </project>

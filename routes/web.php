@@ -15,17 +15,11 @@
 use App\Kino;
 use Illuminate\Support\Facades\Auth;
 
-Route::get('/', function () {
-//    $kinos = Kino::all();
-//    dd($kinos);
-    return view('welcome');
-});
+
 
 Route::get('add', function () {
     return view('kino/add');
 })->name('add');
-
-
 
 
 //definuje cesty
@@ -48,13 +42,16 @@ Route::resource('user', UserController::class);
 Route::get('/user/{user}/delete', [UserController::class, 'destroy'])->name('user.delete'); //trochu nevyhoda riesenia cez
     //resource, ze to neprida vsetky route, delete ocakava ze sa to bude mazat cez formular, ale my to chceme vymazat tak ze rovno budeme mat tlacitko v gride
     //preo tam treba tuto route
-});
 
+});
 Route::post('/user/create', 'UserController@create')->name('user.create');
+
 Route::delete('/user/{user}', 'UserController@destroy')->name('user.destroy');
 
 Route::get('/kino', 'PictureController@index')->name('kinos.index');
+Route::get('/', 'PictureController@index')->name('kino');
 Route::get('/article', 'ArticleController@index')->name('article');
+
 
 
 
