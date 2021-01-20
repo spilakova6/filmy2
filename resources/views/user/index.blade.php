@@ -14,7 +14,7 @@
                             </div>
                         @endif
                         @if(Auth::user()->email== 'admin@admin.sk')
-                            <table class="table table-hover" id="TabUsers">
+                            <table class="table table-hover table-responsive-md" id="TabUsers">
                                 <thead>
                                 <tr>
                                     <th scope="col">Meno</th>
@@ -33,7 +33,7 @@
                                                 @csrf
                                                 <input type="hidden" name="_method" value="DELETE"/>
                                                 @auth
-                                                    <button type="submit" class="btn btn-outline-danger">Zmazat</button>
+                                                    <button type="submit" class="btn btn-outline-danger ">Zmazat</button>
                                                     {{--                                                    onclick="return confirm('Naozaj zmazat?');"--}}
                                                 @endauth
                                             </form>

@@ -36,7 +36,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-footer">
                         <h3>O nás</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac massa et enim rutrum gravida vel et ligula. Morbi sed est sit amet lacus tristique hendrerit vitae et mi. Vivamus ornar.</p>
+                        <p>Naša sieť kín CINEMAS aktuálne prevádzkujeme 2 viac sálových kín s celkovou kapacitou 1200 miest.Naši diváci poznajú kino CINEMAS ako svoje lokálne kino, v ktorom na nich čaká maximálny filmový zážitok a možnosť kultúrneho vyžitia.</p>
                         <div class="footer-social list-inline ">
                             <a href=""><i class="fa fa-facebook-f"></i></a>
                            <a href=""><i class="fa fa-twitter"></i></a>
