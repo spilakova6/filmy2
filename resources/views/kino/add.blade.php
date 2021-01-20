@@ -5,12 +5,14 @@
 
     <link rel="stylesheet" href="https://fengyuanchen.github.io/datepicker/css/datepicker.css">
     <script src="{{asset('datepicker/datepicker.js')}}"></script>
+<link rel="stylesheet" href="{{asset('datetimepicker/jquery.datetimepicker.css')}}"/>
+<script src="{{asset('datetimepicker/jquery.datetimepicker.full.js')}}"></script>
+
 
     @auth
         <div class="container">
             <div class="row">
                 <div class="col">
-
                     @if ($errors->any())
                         <div class="alert alert-danger">
                             <ul>
@@ -20,8 +22,6 @@
                             </ul>
                         </div>
                     @endif
-
-
                     <form action="{{route('kinos.add')}}" method="POST">
                         @csrf
 
@@ -38,33 +38,33 @@
                                 <label>URL obrazka</label>
                                 <input class="form-control" type="text" name="plagat" value="{{old('plagat')}}"/>
                             </div>
-
                             <div class="form-group">
                                 <label>Cas</label>
-                                <input class="form-control" type="text" name="cas" value="{{old('cas')}}"/>
+                                <input class="form-control" id="timepicker" type="text" name="cas" value="{{old('cas')}}"/>
                             </div>
-
+                            <script>
+                                $('#timepicker').datetimepicker({
+                                    timepicker: true,
+                                    datepicker: false,
+                                    format: 'H:i',
+                                    hours12: false,
+                                    step: 5
+                                });
+                            </script>
                             <div class="form-group">
                                 <label>Datum</label>
-                            <input data-toggle="datepicker" class="form-control" type="text" name="datum" value="{{old('datum')}}"/>
+                            <input data-toggle="datepicker"  class="form-control" type="text" name="datum" value="{{old('datum')}}"/>
                             </div>
                             <script>
                                 $(function () {
                                     'use strict',
-
                                     $('[data-toggle="datepicker"]').datepicker({
-
                                         format: 'yyyy-mm-dd',
                                         startDate:  $().datepicker ('getDate', true),
-
                                     });
-
                                 });
                             </script>
-
-
                             <button type="submit" class="btn btn-primary">Pridat</button>
-
                         </div>
                     </form>
 
@@ -72,8 +72,4 @@
             </div>
         </div>
     @endauth
-
-
-
-
 @endsection

@@ -19,15 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1175d06a-9f06-4b39-bfae-a2a8c691f927" name="Default Changelist" comment="pridana tabulka pictures, pridana nova uvodna stranka, footer + nejake dalsie úpravy">
-      <change afterPath="$PROJECT_DIR$/app/Article.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/kino/article.blade.php" afterDir="false" />
+    <list default="true" id="1175d06a-9f06-4b39-bfae-a2a8c691f927" name="Default Changelist" comment="pridana tabulka pictures, pridana nova uvodna stranka, footer + nejake dalsie úpravy&#10;&#10;pridana tabulka articles, uprava databazy, pridaný cudzí klúč, pridana stranka clanky">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/KinoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/KinoController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Kino.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Kino.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/kino/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/kino/article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/article.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/kino/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/kino/program.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kino/program.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,7 +188,7 @@
       <workItem from="1610710862807" duration="14301000" />
       <workItem from="1610728677065" duration="8806000" />
       <workItem from="1610740628804" duration="77577000" />
-      <workItem from="1610994986417" duration="24082000" />
+      <workItem from="1610994986417" duration="64648000" />
     </task>
     <task id="LOCAL-00001" summary="pridane login, register, users">
       <created>1610720220076</created>
@@ -236,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610977571835</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="pridana tabulka pictures, pridana nova uvodna stranka, footer + nejake dalsie úpravy&#10;&#10;pridana tabulka articles, uprava databazy, pridaný cudzí klúč, pridana stranka clanky">
+      <created>1611068559282</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1611068559282</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +269,8 @@
     <MESSAGE value="úpravy stránky" />
     <MESSAGE value="datepicker" />
     <MESSAGE value="pridana tabulka pictures, pridana nova uvodna stranka, footer + nejake dalsie úpravy" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridana tabulka pictures, pridana nova uvodna stranka, footer + nejake dalsie úpravy" />
+    <MESSAGE value="pridana tabulka pictures, pridana nova uvodna stranka, footer + nejake dalsie úpravy&#10;&#10;pridana tabulka articles, uprava databazy, pridaný cudzí klúč, pridana stranka clanky" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridana tabulka pictures, pridana nova uvodna stranka, footer + nejake dalsie úpravy&#10;&#10;pridana tabulka articles, uprava databazy, pridaný cudzí klúč, pridana stranka clanky" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1610471341986">
@@ -276,10 +287,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="162" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610986674290" />
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611011397389">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2336" y="199" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611071803956">
+      <screen x="1920" y="0" width="1280" height="984" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1611011397389" />
+    <state x="2336" y="199" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1611071803956" />
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1610566286745" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610881682979">
       <screen x="0" y="0" width="1536" height="824" />
@@ -303,10 +315,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610984803858" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1610977604341">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2221" y="173" key="Vcs.Push.Dialog.v2" timestamp="1611068565885">
+      <screen x="1920" y="0" width="1280" height="984" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1280.984@0.0.1536.824" timestamp="1610977604341" />
+    <state x="2221" y="173" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1280.984@1920.0.1280.984" timestamp="1611068565885" />
     <state x="1920" y="0" width="1217" height="811" maximized="true" key="dock-window-1" timestamp="1610807397349">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>

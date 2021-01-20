@@ -31,16 +31,16 @@ Route::get('add', function () {
 //definuje cesty
 
 Route::get('/program', 'KinoController@index')->name('program');
-Route::get('/kinos/{kino}', 'KinoController@show')->name('kinos.show');
-Route::post('kinos/add', 'KinoController@add')->name('kinos.add');
-Route::put('/kinos/{kino}', 'KinoController@edit')->name('kinos.edit');
-Route::delete('/kinos/{kino}', 'KinoController@delete')->name('kinos.delete');
-Route::get('/kinos/zmaz/{kino}', 'KinoController@edit')->name('kinos.zmaz');
+Route::get('/kino/{kino}', 'KinoController@show')->name('kinos.show');
+Route::post('kino/add', 'KinoController@add')->name('kinos.add');
+Route::put('/kino/{kino}', 'KinoController@edit')->name('kinos.edit');
+Route::delete('/kino/{kino}', 'KinoController@delete')->name('kinos.delete');
+Route::get('/kino/zmaz/{kino}', 'KinoController@edit')->name('kinos.zmaz');
 
 
 
 Auth::routes();
-
+Route::get('/user/ajax','UserController@ajax')->name('user.ajax');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['middleware'=>['auth']], function (){//az ked sa uzivatel prihlasy, moze vidiet userov
@@ -50,6 +50,11 @@ Route::get('/user/{user}/delete', [UserController::class, 'destroy'])->name('use
     //preo tam treba tuto route
 });
 
+Route::post('/user/create', 'UserController@create')->name('user.create');
+Route::delete('/user/{user}', 'UserController@destroy')->name('user.destroy');
+
 Route::get('/kino', 'PictureController@index')->name('kinos.index');
 Route::get('/article', 'ArticleController@index')->name('article');
+
+
 

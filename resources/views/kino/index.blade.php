@@ -1,80 +1,11 @@
+
 @extends('layouts.app')
 
 @section('content')
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <style>
-
-        #footer-area{
-            padding: 90px 0 60px 0;
-            background: #262626;
-            color: #fff;
-        }
-        .footer-social {
-            margin-top:  20px;
-
-
-        }
-        .single-footer h3{
-            font-weight: 500;
-            margin-bottom: 25px;
-            color: #fafafa;
-            font-family: Merienda;
-        }
-        .link-area li {
-            padding: 5px 5px 5px 0;
-            list-style: none;
-        }
-        .link-area li a {
-            text-transform: capitalize;
-            color: #ddd;
-            font-family: Merienda;
-        }
-
-        .link-area li a i{
-            margin-right: 10px;
-            color: #ddd;
-
-        }
-        .link-area {
-            padding: 0;
-        }
-        .single-footer p{
-            font-family: Merienda;
-        }
-
-        .footer-social a {
-            width: 30px;
-            height: 30px;
-           margin-left: 20px;
-        }
-        .footer-social li a i{
-            color: #fff;
-            padding: 8px;
-        }
-        .widget li {
-            float: left;
-            width: 50%;
-
-        }
-        .widget li a img{
-            margin-bottom: -10px;
-            width: 150%;
-            height: 200px;
-        }
-        .copyright-area {
-            background: #000;
-            padding: 30px 0;
-            margin-top: 30px;
-            border-radius: 5px;
-        }
-        .copyright-area p{
-            font-weight: 600;
-            color: #fafafa;
-        }
-    </style>
-
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">;
 
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">

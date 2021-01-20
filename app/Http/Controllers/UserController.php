@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -20,6 +21,12 @@ class UserController extends Controller
 
     }
 
+//    public function ajax()
+//    {
+//        return User::find(1);
+//
+//
+//    }
 
 
     /**
@@ -29,18 +36,40 @@ class UserController extends Controller
      */
     public function create(Request $request)
     {
+        $validatedData = $request->validate([
+            'name' => 'required|min:3|max:255',
+            'email' => 'required|email',
+            'password' => 'required|min:5',
+
+        ],
+            [
+                'name.required' => "Meno nemoze byt prazdne",
+                'name.min' => 'Meno musi obsahovat min. 3 znaky',
+                'email.required' => 'Email nemoze byt prazdny',
+                'email.email' => 'email musi byt vo formate email@email.com',
+                'password.required' => 'heslo nemoze byt prazdne',
+                'password.min' => 'heslo musi obsahovat min. 5 znakov ',
+
+            ]);
+
+
+
         $user = new User();
         $user->id = $request->get('id');
         $user->name = $request->get('name');
         $user->email = $request->get('email');
         $user->email_verified_at = $request->get('email_verified_at');
-        $user->password = $request->get('password');
+        $user->password = Hash::make($request->get('password'));
         $user->remember_token = $request->get('remember_token');
         $user->created_at = $request->get('created_at');
         $user->updated_at = $request->get('updated_at');
         $user->foto = $request->get('foto');
         $user->save();
 
+
+        if($request->ajax()){
+            return $user;
+        }
         return redirect()->route('user.index', $user);
     }
 
@@ -95,8 +124,14 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, User $user)
     {
-        //
+        if($request->ajax()){
+            return $user;
+        }
+        $user->delete();
+
+//        return redirect()->back();
+        return redirect()->route('user.index', $user);
     }
 }

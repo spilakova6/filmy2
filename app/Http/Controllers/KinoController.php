@@ -34,6 +34,7 @@ class KinoController extends Controller
         ]);
 
         $kino = new Kino();
+        $kino->user_id = $request->get('user_id');
         $kino->nazov = $request->get('nazov');
         $kino->popis = $request->get('popis');
         $kino->plagat = $request->get('plagat');
@@ -42,7 +43,7 @@ class KinoController extends Controller
 
         $kino->save();
 
-        return redirect()->route('kino.program', $kino);
+        return redirect()->route('program', $kino);
 
     }
 

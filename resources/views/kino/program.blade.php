@@ -93,32 +93,26 @@
                             <div class="card">
                                 <div class="card-body ">
                                     @auth
+
                                         <a class="btn btn-outline-primary" href="{{route('kinos.show', $kino)}}"
-                                           role="button">edituj</a>
+                                            role="button">edituj</a>
 
                                         <br>
                                     @endauth
-                                    <form action=""></form>
+{{--                                    <form action=""></form>--}}
 
-
-                                    <form action="{{route('kinos.delete', $kino)}}" method="POST">
+                                    <form  action="{{route('kinos.delete', $kino)}}" method="POST">
                                         @csrf
                                         <input type="hidden" name="_method" value="DELETE"/>
                                         @auth
-                                            <button type="submit" class="btn btn-outline-danger "
-                                                    onclick="return confirm('Naozaj zmazat?');">Zmazat
-                                            </button>
+                                            <button type="submit" class="btn btn-outline-danger float-right" >Zmazat</button>
+{{--                                            onclick="return confirm('Naozaj zmazat?');"--}}
                                         @endauth
                                     </form>
-
-
-
                                     <h5 class="card-title"><B>{!!nl2br($kino->nazov)!!}</B></h5>
                                     <p class="card-text">{!!nl2br($kino->popis)!!}</p>
                                     <img class="card-img-top" src="{{$kino->plagat}} "/>
                                     <a href="#" class="btn btn-primary align-text-top">{{$kino->datum}}   {{$kino->cas}}</a>
-
-
                                 </div>
                             </div>
                         </div>
@@ -129,12 +123,6 @@
 
         <hr>
     </div>
-
-
-    {{--</body>--}}
-    {{--</html>--}}
-
-
 
 
 @endsection

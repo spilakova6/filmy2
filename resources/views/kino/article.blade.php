@@ -15,8 +15,6 @@
 <div class="table-responsive">
 
     <div class="container">
-
-
         <p></p>
         <table class="table table-hover">
             <thead>
@@ -40,14 +38,10 @@
 
 </div>
 
-
-
 <div class="container py-2">
     @foreach($articles as $article)
     <div class="box-shadow d-block">
-
         <div class="row">
-
             <div class="col-md-12">
                 <h3 class="table-responsive-md">{{$article->kino->nazov}}</h3>
             </div>
@@ -55,7 +49,6 @@
         <div class="row">
             <div class="col-md-3">
                 <img src="{{$article->kino->plagat}}" alt="" class="img-fluid">
-
             </div>
 {{--            <div class="col-md-3">--}}
 
@@ -65,11 +58,9 @@
             <span class="text"><p>{!!nl2br($article->popis)!!}</p></span>
             </div>
         </div>
-
     </div>
     @endforeach
 </div>
-
 
 
 <div class="media border p-3">
@@ -88,8 +79,5 @@
     </div>
     @endforeach
 </div>
-
-
-
 
 @endsection
